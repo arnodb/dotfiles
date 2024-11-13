@@ -1,6 +1,7 @@
 require("utils")
 require("config.lazy")
 
+vim.opt.ignorecase = true
 vim.opt.clipboard = "unnamedplus"
 
 vim.cmd [[colorscheme vim]]
