@@ -4,7 +4,7 @@ require("config.lazy")
 vim.opt.ignorecase = true
 vim.opt.clipboard = "unnamedplus"
 
-vim.cmd [[colorscheme vim]]
+vim.cmd [[colorscheme desert]]
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
