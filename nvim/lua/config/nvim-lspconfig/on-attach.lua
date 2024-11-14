@@ -26,6 +26,7 @@ return function(client)
   lua_nmap('<leader>a', 'vim.diagnostic.setloclist()')
   lua_nmap('<leader>en', 'vim.diagnostic.goto_next()')
   lua_nmap('<leader>ep', 'vim.diagnostic.goto_prev()')
+  lua_nmap('<leader>d', 'vim.diagnostic.open_float()')
 
   --vim.cmd [[autocmd! BufWritePre <buffer> lua vim.lsp.buf.format(nil, 1000)]]
   vim.cmd [[autocmd! BufWritePre *.rs lua vim.lsp.buf.format(nil, 1000)]]

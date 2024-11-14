@@ -31,7 +31,7 @@ vim.diagnostic.config {
   signs = true,
   severity_sort = true,
   update_in_insert = false,
-  virtual_text = false,
+  virtual_text = true,
 }
 
 for _, method in ipairs({ 'textDocument/diagnostic', 'workspace/diagnostic' }) do
