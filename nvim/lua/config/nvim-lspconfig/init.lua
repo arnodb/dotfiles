@@ -138,7 +138,29 @@ local servers = {
     },
   },
   clangd = {},
-  rust_analyzer = {},
+  rust_analyzer = {
+    settings = {
+      ["rust-analyzer"] = {
+        cargo = {
+          buildScripts = {
+            enable = true,
+          },
+	  features = 'all',
+        },
+	check = {
+	  command = 'clippy',
+	  extraArgs = { '--', '-D', 'warnings' },
+	},
+        workspace = {
+          ignoredFolders = {
+            "$HOME",
+            "$HOME/.cargo/**",
+            "$HOME/.rustup/**"
+          },
+        },
+      },
+    },
+  },
   elmls = {},
   gopls = {
     settings = {
