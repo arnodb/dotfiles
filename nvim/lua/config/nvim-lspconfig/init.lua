@@ -147,10 +147,10 @@ local servers = {
           },
 	  features = 'all',
         },
-	check = {
-	  command = 'clippy',
-	  extraArgs = { '--', '-D', 'warnings' },
-	},
+	--check = {
+	--  command = 'clippy',
+	--  extraArgs = { '--', '-D', 'warnings' },
+	--},
         workspace = {
           ignoredFolders = {
             "$HOME",
