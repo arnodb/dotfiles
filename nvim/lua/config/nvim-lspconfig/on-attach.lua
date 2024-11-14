@@ -30,6 +30,10 @@ return function(client)
   --vim.cmd [[autocmd! BufWritePre <buffer> lua vim.lsp.buf.format(nil, 1000)]]
   vim.cmd [[autocmd! BufWritePre *.rs lua vim.lsp.buf.format(nil, 1000)]]
 
+  if client.server_capabilities.inlayHintProvider then
+    vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+  end
+
   vim.cmd [[autocmd! CursorHold  <buffer> lua vim.lsp.buf.document_highlight()]]
   vim.cmd [[autocmd! CursorHoldI <buffer> lua vim.lsp.buf.document_highlight()]]
   vim.cmd [[autocmd! CursorMoved <buffer> lua vim.lsp.buf.clear_references()]]
