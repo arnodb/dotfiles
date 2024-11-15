@@ -1,6 +1,6 @@
 local cmp = require 'cmp'
 cmp.setup {
-  completion = { completeopt = 'menu,menuone,noinsert' },
+  completion = { autocomplete = false, completeopt = 'menu,menuone,noinsert' },
   mapping = {
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
