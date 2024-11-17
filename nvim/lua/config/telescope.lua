@@ -1,3 +1,9 @@
+require('telescope').setup({
+  defaults = {
+    layout_strategy = 'vertical',
+  },
+})
+
 local nmap = U.keymap.nmap
 
 nmap('<C-P>', '<cmd>Telescope find_files<CR>')

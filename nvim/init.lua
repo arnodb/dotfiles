@@ -4,6 +4,10 @@ require("config.lazy")
 vim.opt.ignorecase = true
 vim.opt.clipboard = "unnamedplus"
 
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+
 vim.cmd [[colorscheme desert]]
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })

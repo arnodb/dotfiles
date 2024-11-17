@@ -138,29 +138,30 @@ local servers = {
     },
   },
   clangd = {},
-  rust_analyzer = {
-    settings = {
-      ["rust-analyzer"] = {
-        cargo = {
-          buildScripts = {
-            enable = true,
-          },
-	  features = 'all',
-        },
-	--check = {
-	--  command = 'clippy',
-	--  extraArgs = { '--', '-D', 'warnings' },
-	--},
-        workspace = {
-          ignoredFolders = {
-            "$HOME",
-            "$HOME/.cargo/**",
-            "$HOME/.rustup/**"
-          },
-        },
-      },
-    },
-  },
+  -- Use 'rustaceanvim' to do the setup
+  --rust_analyzer = {
+  --  settings = {
+  --    ["rust-analyzer"] = {
+  --      cargo = {
+  --        buildScripts = {
+  --          enable = true,
+  --        },
+  --      features = 'all',
+  --      },
+  --    check = {
+  --      command = 'clippy',
+  --      extraArgs = { '--', '-D', 'warnings' },
+  --    },
+  --      workspace = {
+  --        ignoredFolders = {
+  --          "$HOME",
+  --          "$HOME/.cargo/**",
+  --          "$HOME/.rustup/**"
+  --        },
+  --      },
+  --    },
+  --  },
+  --},
   elmls = {},
   gopls = {
     settings = {
