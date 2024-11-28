@@ -12,7 +12,6 @@ local servers = {
     filetypes = {
       'bib',
       'gitcommit',
-      'markdown',
       'org',
       'plaintex',
       'rst',
@@ -27,7 +26,6 @@ local servers = {
       'mail',
       'text',
       'asciidoc',
-      'md',
     },
     settings = {
       language = 'en-US',
