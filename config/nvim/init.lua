@@ -8,7 +8,9 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
-vim.cmd [[colorscheme desert]]
+--vim.opt.mouse =
+
+vim.cmd [[colorscheme habamax]]
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
