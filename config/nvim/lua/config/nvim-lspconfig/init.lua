@@ -28,6 +28,14 @@ local servers = {
   jsonls = vim.lsp.config('jsonls', {
     capabilities = capabilities,
   }),
+  omnisharp = {
+    cmd = {
+      'omnisharp',
+      '--languageserver',
+      '--hostPID',
+      tostring(vim.fn.getpid()),
+    },
+  },
   -- Use 'rustaceanvim' to do the setup
   --rust_analyzer = {
   --  settings = {
