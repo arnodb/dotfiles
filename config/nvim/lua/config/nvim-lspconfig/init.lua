@@ -60,6 +60,7 @@ local servers = {
   --    },
   --  },
   --},
+  ts_ls = {},
   vimls = {},
 }
 
